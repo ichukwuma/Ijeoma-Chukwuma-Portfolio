@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ijeoma's Portfolio</title>
+</head>
+<body class="bg-PaleBlue-100 font-roboto_mono">
+    <!--top section-->
+    <div class="h-[50vh] lg:h-screen relative">
+    <div>
+        <!--navbar-->
+        <nav class="w-full fixed top-0 bg-PaleBlue-400 z-10">
+            <div class="container mx-auto py-2 flex  items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img class="w-20"src="./img/logo.png" alt="">
+                    <span class="text-2xl font-bold text-black">Ijeoma Chukwuma</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-black font-bold text-sm">
+                    <li class="hover:text-PaleBlue-100">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="hover:text-PaleBlue-100">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="hover:text-PaleBlue-100">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="hidden bg-PaleBlue-200 absolute left-0 top-0 w-full p-10 rounded-3xl space-y-10 text-center">
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+         <!--intro content-->
+         <!--My Headshot-->
+         <img class="absolute rounded-md top-40 right-0 lg:left-0 mx-auto h-2/3 object-cover" src="img/pfp.PNG" alt="">
+         <!--animated text :D to add dazzle :D -->
+         <div class="absolute space-y-5 top-1/3 left-5 text-2xl sm:left-10 sm:text-4xl md:left-1/4 md:text-5xl lg:left-5 xl:left-20 xl:text-6xl font-bold">
+            <span class="text-PaleBlue-700">Tech Girlie</span>
+            <p id="text" class="text-BlushPink-300"> </p>
+         </div>
+        
+         <!--About me text-->
+         <div id="about" class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-PaleBlue-600 absolute top-0 bottom-0 m-auto right-10 bg-PaleBlue-300 p-6 h-fit w-1/3">
+            <h1 class="text-4xl font-bold">Hello World! I'm Ijeoma</h1>
+            <p>
+                I am a Computer Science Alumni from the 
+                University of North Texas with a passion for 
+                problem-solving and creativity. Beyond my academic pursuits, 
+                I love gaming, attending concerts, and staying active at the gym. 
+                In my downtime, I’m always eager to learn something new—especially 
+                when it comes to technology, technical writing, or content design. 
+                I’m driven by curiosity and constantly seek opportunities to grow!
+            </p>
+            <!--button for resume pdf download coming soon-->
+            <a class="hover:bg-BlushPink-50 bg-BlushPink-200 text-black text-xl px-3 py-2 rounded-md font-semibold w-fit"  href="https://docs.google.com/document/d/1adGkvsUWGRQyoCoZPSrAUniZeJH0Tc1jmqFF-pclRUo/edit?usp=sharing">
+            My Resume</a>
+         </div>
+    </div>
+
+    <!--coding projects and technical documents-->
+    <div>
+        <div class="container mx-auto">
+            <div id="projects" class="flex flex-col gap-3 items-center">
+            <!--top area-->
+            <h1 class="text-PaleBlue-700 text-3xl font-bold">Projects</h1>
+            <p class="text-center text-PaleBlue-700 text-lg">
+                Coding projects, Technical Documents and Designs
+            </p>
+            </div>
+
+            <!--bottom area with projects-->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!--This Portfolio Card-->
+                <div class=" hover:bg-BlushPink-50 w-full md:w-4/12 shadow-md shadow-PaleBlue-600 rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3" >
+                    <img class="w-10" src="./img/flower.png" alt="">
+                    <h1 class="text-PaleBlue-900 font-medium text-lg">My Portfolio Site</h1>
+                    <p class="text-PaleBlue-700">
+                        This site is still a W.I.P since I am still learning more about web development. 
+                        This site was built using TailwindCSS and HTML. 
+                    </p>
+                    <a class="text-BlushPink-500 font-semibold text-sm" href="#about">About Me</a>
+                </div>
+
+                <!--Learning Kids Card-->
+                <div class=" hover:bg-BlushPink-50 w-full md:w-4/12 shadow-md shadow-PaleBlue-600 rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="./img/flower.png" alt="">
+                    <h1 class="text-PaleBlue-900 font-medium text-lg">Learning Kids</h1>
+                    <p class="text-PaleBlue-700">
+                        For my final Capstone group project, we developed an mobile learning game using Expo Go 
+                        to help children with autism learn emergency contact
+                        information.
+                    </p>
+                    <a class="text-BlushPink-500 font-semibold text-sm" href="https://drive.google.com/file/d/1nSLWk6LQO9j7y9IhuyemSzGe3hmqBkvy/view?usp=sharing">Project Demo</a>
+                </div>
+
+                 <!--Kpop figma shop-->
+                 <div class="hover:bg-BlushPink-50 w-full md:w-4/12 shadow-md shadow-PaleBlue-600 rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="./img/flower.png" alt="">
+                    <h1 class="text-PaleBlue-900 font-medium text-lg">Kpop Shopaholics</h1>
+                    <p class="text-PaleBlue-700">
+                        I created a protoype of a kpop album shop on Figma. This was created to display an online shop's design and interactivity among each element.
+                    </p>
+                    <a class="text-BlushPink-500 font-semibold text-sm" href="https://www.figma.com/design/Stnt4CgRk4jQKDoQDs3tMS/Kpop-Albums-Shop?node-id=0-1&t=NK6d6rOdQ6weMjxc-1">Figma Link</a>
+                </div>
+
+                <!--Amazing Pieces-->
+                <div class="hover:bg-BlushPink-50 w-full md:w-4/12 shadow-md shadow-PaleBlue-600 rounded-lg my-3 md:my-10 p-5 flex flex-col gap-3">
+                    <img class="w-10" src="./img/flower.png" alt="">
+                    <h1 class="text-PaleBlue-900 font-medium text-lg">Amazing Piece Designs</h1>
+                    <p class="text-PaleBlue-700">
+                        Used Canva to create designs/graphics based learned from TECM3100 at UNT.
+                        I applied design practices from the book: "White Space is Not Your Enemy".
+                    </p>
+                    <a class="text-BlushPink-500 font-semibold text-sm" href="https://drive.google.com/drive/folders/14sJt0jWjNh75j_aTtU1jXy16DX04hwtV?usp=sharing">Amazing Piece Designs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact info / footer area / links-->
+    <div id="contact" class="w-full bg-BlushPink-200">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="hidden md:block font-meduium text-sm text-black">© 2025 Ijeoma Chukwuma. All Rights Reserved.</span>
+                
+            </div>
+            
+
+            <div class="flex gap-4">
+                <span class=" text-sm text-black">chukwumaijeoma29@gmail.com</span>
+
+                <a class="hover:bg-BlushPink-50" href="https://www.linkedin.com/in/ijeoma-chukwuma/">
+                    <img class="w-5 cursor-pointer" src="/img/social-linkedin.256x256.png" alt="">
+                </a>
+
+                <a class="hover:bg-BlushPink-50" href="https://github.com/ichukwuma">
+                    <img class="w-5 cursor-pointer" src="/img/github-square.256x256.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"> </script>
+    <script src="./autotyping.js"> </script>
+</body>
+</html>
